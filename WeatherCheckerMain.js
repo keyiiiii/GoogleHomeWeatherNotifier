@@ -19,7 +19,7 @@ module.exports = class WeatherCheckerMain {
         if(past.Rainfall > 0 && current.Rainfall == 0) {
         	googleHome.tell("雨がやんだっぽいです。")
         }
-        if(past.Rainfall == 0 && currentRainfall > 0) {
+        if(past.Rainfall == 0 && current.Rainfall > 0) {
       	    googleHome.tell("雨がふり始めたかもしれません。")
         }
       } else {
