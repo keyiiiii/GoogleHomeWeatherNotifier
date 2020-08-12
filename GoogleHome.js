@@ -7,7 +7,7 @@ module.exports = class GoogleHome {
     const language = 'ja';
 
     googlehome.device('Google-Home', language); 
-    googlehome.ip(this._ipAddress);
+    googlehome.ip(this._ipAddress, language);
     googlehome.notify(message, function(res) {
       console.log(res);
     });
